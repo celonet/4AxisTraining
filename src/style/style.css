@@ -1,0 +1,49 @@
+body {
+    background-color: #ccc;
+}
+
+.wrapper {
+    margin: auto;
+    width: 50%;
+    padding: 5px;
+    height: 95%;
+}
+
+.metronomo {
+    width: 100%;
+}
+
+.metronomo h1{
+    text-align: center;
+}
+
+.metronomo #bpm {
+    width: 90%;
+}
+
+.metronomo #play {
+    width: 8%;
+}
+
+#start {
+    margin: 0px -50px;
+    height: 20px;
+    position: relative;
+    width: 100px;
+}
+
+.notas {
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.nota {
+    font-size: 20em;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+.configuration {
+    display: none;
+}

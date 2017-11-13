@@ -1,0 +1,39 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>4 Axis</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="metronomo">
+            <h1>40bpm</h1>
+            <input type="range" min="40" max="218" value="40" id="bpm" />
+            <audio id="clap" src="resources/clap.mp3"></audio>
+            <audio id="beep" src="resources/beep-07.wav"></audio>
+            <button id="play">Play</button>
+        </div>
+        <div class="configuration">
+            <fieldset>
+                <input type="radio" name="tipo" value="quartas">
+                <label for="quartas">Quartas</label>
+                <input type="radio" name="tipo" value="quintas">
+                <label for="quintas">Quintas</label>
+                <input type="radio" name="tipo" value="aleatorio" checked>
+                <label for="aleatorio">Aleatorio</label>
+            </fieldset>
+            <label for="aleatorio">Qtde. Notas</label>
+            <input type="number" name="qtdeNotas" value="7">
+        </div>
+        <div class="notas">
+            <div class="nota"></div>
+        </div>
+    </div>
+    <script src="scripts/metronomo.js"></script>
+</body>
+
+</html>
